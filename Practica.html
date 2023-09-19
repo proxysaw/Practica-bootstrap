@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<!--Containers-->
+<div class="container-fluid">
+    <h1>Contenedor Fluid</h1>
+    <p>Este es un contenedor fluid que se extiende por todo el ancho de la pantalla.</p>
+</div>
+
+<div class="container-xxl">
+    <h1>Contenedor XXL</h1>
+    <p>Este es un contenedor que utiliza la clase "container-xxl" para un ancho extra grande.</p>
+</div>
+
+<div class="container">
+    <h1>Contenedor</h1>
+    <p>Este es un contenedor estándar de Bootstrap.</p>
+</div>
+
+<div class="container-sm">
+    <h1>Contenedor Small</h1>
+    <p>Este es un contenedor que utiliza la clase "container-sm" para un ancho más pequeño en dispositivos pequeños.</p>
+</div>
+    <!--Fin Containers-->
+    <br>
+    <!-- Tabla de datos-->
+    <div class="container mt-4">
+        <h2 class="nombretabla">Tabla de Datos</h2> 
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th class="tabla">Nombre</th>
+                    <th class="tabla">Apellido</th>
+                    <th class="tabla">Edad</th>
+                    <th class="tabla">Correo Electrónico</th>
+                    <th class="tabla">Género</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="color">John</td>
+                    <td class="color2">Doe</td>
+                    <td>35</td>
+                    <td class="tipodeletra">john@example.com</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td class="color">Jane</td>
+                    <td class="color2">Smith</td>
+                    <td>28</td>
+                    <td class="tipodeletra">jane@example.com</td>
+                    <td>Femenino</td>
+                </tr>
+                <tr>
+                    <td class="color">David</td>
+                    <td class="color2">Johnson</td>
+                    <td>42</td>
+                    <td class="tipodeletra">david@example.com</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td class="color">Maria</td>
+                    <td class="color2">Gonzalez</td>
+                    <td>25</td>
+                    <td class="tipodeletra">maria@example.com</td>
+                    <td>Femenino</td>
+                </tr>
+                <tr>
+                    <td class="color">Carlos</td>
+                    <td class="color2">Rodriguez</td>
+                    <td>31</td>
+                    <td class="tipodeletra">carlos@example.com</td>
+                    <td>Masculino</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>                      
+    <!--Fin Tabla de datos-->
+    <br>
+    <!-- Input con opciones-->
+        <div class="container mt-4">
+            <h2>INPUT</h2> 
+            <div class="form-group">
+                <label for="opciones">Seleccione una opcion:</label>
+                <select class="form-control" id="opciones">
+                    <option value="opcion1">Opcion 1</option>
+                    <option value="opcion2">Opcion 2</option>
+                    <option value="opcion3">Opcion 3</option>
+                    <option value="opcion4">Opcion 4</option>
+                    <option value="opcion5">Opcion 5</option>
+                </select>
+            </div>
+        </div>
+    <!-- Fin Input con opciones-->
+    <br>
+    <!-- Input con rango-->
+        <div class="container mt-4">
+            <h2>INPUT CON RANGO</h2>
+            <div class="form-group">
+                <label for="rango">Selecciona un valor:</label>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span>0</span>
+                    <input type="range" class="custom-range" id="rango" min="0" max="100" step="1" value="50">
+                    <span>100</span>
+                </div>
+            </div>
+        </div>
+    <!-- Fin Input con rango-->
+    <br>
+    <!--Acordeon -->
+    <div class="container mt-4">
+        <h2>Ejemplo de Acordeón con Bootstrap</h2>
+        <div class="accordion" id="miAcordeon">
+            <div class="card">
+                <div class="card-header" id="seccion1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#contenido1" aria-expanded="true" aria-controls="contenido1">
+                            Sección 1
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="contenido1" class="collapse show" aria-labelledby="seccion1" data-parent="#miAcordeon">
+                    <div class="card-body">
+                        <img src="img/d.jpg" alt="Imagen de ejemplo">
+                        <p>messi</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="seccion2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#contenido2" aria-expanded="false" aria-controls="contenido2">
+                            Sección 2
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="contenido2" class="collapse" aria-labelledby="seccion2" data-parent="#miAcordeon">
+                    <div class="card-body">
+                        <img src="img/SVDEZKLRFPAWZSWN7RGBUXV6OY.avif" alt="Otra imagen de ejemplo">
+                        <p>messi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Fin Acordeon -->
+    <br>
+    <!-- Tarjeta -->
+    <body>
+        <div class="container mt-4">
+            <h2>Messi Biografia</h2>
+            <div class="card" style="width: 18rem;">
+                <img src="img/692933-leo-20messi-20copa-20del-20mundo.jpeg" class="card-img-top" alt="Imagen de ejemplo">
+                <div class="card-body">
+                    <h5 class="card-title">Lionel Messi</h5>
+                    <p class="card-text">Lionel Andrés Messi Cuccittini, conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista y su equipo actual es el Inter Miami de la MLS de Estados Unidos</p>
+                    <a href="https://www.instagram.com/leomessi/?hl=es" class="btn btn-primary">Enlace</a>
+                </div>
+            </div>
+        </div>
+  <!-- Fin Tarjeta -->
+        <br>
+  <!-- Carrusel -->
+  <div class="container mt-4">
+    <h2>Carrusel de Imágenes con Bootstrap</h2>
+    <div id="miCarrusel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores del Carrusel -->
+        <ul class="carousel-indicators">
+            <li data-target="#miCarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#miCarrusel" data-slide-to="1"></li>
+            <li data-target="#miCarrusel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Imágenes del Carrusel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="img" src="img/messi.jpg" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img id="img" src="img/692933-leo-20messi-20copa-20del-20mundo.jpeg" alt="Imagen 2">
+            </div>
+            <div class="carousel-item">
+                <img id="img" src="img/pileta.jpg" alt="Imagen 3">
+            </div>
+        </div>
+
+        <!-- Controles del Carrusel -->
+        <a class="carousel-control-prev" href="#miCarrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#miCarrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Fin Controles del Carrusel -->
+</body>
+</html>
